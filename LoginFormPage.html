@@ -1,0 +1,52 @@
+<!Doctype>
+<html>
+  <head>
+   <title>LOGIN Form Page</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width initial-scale=1.0";>
+   <style>
+     *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+    
+      body{background:linear-gradient(to right,blue,pink);} 
+     .container{position:relative;width:400px;height:600px;background:white;
+                         margin:auto;top:30px;padding:60px;border-radius:15px;}
+    
+      p{font-size:30px;font-weight:bold;text-align:center;padding-bottom:80px;}
+     
+
+      label[for=uname], label[for=pswd]{width:280px;height:40px;margin-bottom:20px;font-weight:bold;}
+      label[for=uname], label[for=pswd]:hover{ transform: skewX(20deg);}    
+      
+
+      div[class=container]:hover{transform: translate(5px, 0px);} 
+  
+      input[type=text]{width:280px;height:40px;margin-top:10px;margin-bottom:20px;color:#003366;border-radius:5px;box-shadow:0px 1px 3px;}
+      input[type=text]:hover{box-shadow:1px 1px 2px 3px rgb(255, 204, 0);border:none;transform: translate(5px, 5px);width:281px;height:41px;}
+      
+      input[type=password]{width:280px;height:40px;margin-top:10px;margin-bottom:20px;color:#003366;border-radius:5px;box-shadow:0px 1px 3px;}
+      input[type=password]:hover{box-shadow:1px 1px 2px 3px rgb(255, 204, 0);border:none;transform: translate(5px, 5px);width:281px;height:41px;}
+
+      input[type=button]{background:linear-gradient(to right,pink,blue);width:280px;height:40px;border:none;border-radius:10px;margin-top:20px;
+            color:white;font-weight:bold;cursor:pointer;box-shadow:10px 0px 0px 0px;}
+
+      input[type=button]:hover{background:#003366;box-shadow:3px 0px 0px 0px rgb(255, 204, 0),0px 10px 0px 0px rgb(255, 204, 0);} 
+     
+       @media only screen and (max-width: 600px) {
+          body{background-color: lightblue;}
+                       }
+  </style>
+  <head>
+
+  <body>
+    <div class="container">
+      <form>
+        <p>LOGIN</p>
+        <label for="uname">Username or Email Address</label>
+        <input type="text" id="uname" name="uname" placeholder="       Enter your name..">
+        <label for="pswd">Password</label>
+	<input type="password" id="pswd" name="pswd" placeholder="       Enter your password..">
+        <input type="button" value="Sign In" onClick="location.href='start.html'">
+      </form>
+    </div>
+  </body>
+<html>
